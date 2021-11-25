@@ -67,11 +67,13 @@ tbody tr:hover {
 }
 
 .table {
+    display: table;
     width: 960px;
     border-collapse: collapse;
 }
 
 .table p {
+    display: table-row;
     margin: 0;
     font-size: 16px;
     background-color: #e8e8e8;
@@ -81,11 +83,14 @@ tbody tr:hover {
     padding: 17px 23px 13px 22px;
     font-size: 16px;
     color: #fff;
-    
+    background-color: #2a3644;
 }
 
 
 .table i {
+    display: table-cell;
+    padding: 17px 23px 13px 22px;
+    
     font-size: 16px;
     color: #2a3644;
     font-style: normal;
