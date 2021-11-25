@@ -27,7 +27,6 @@ thead {
 
 .table-writer-th th {
     padding: 10px 0;
-    text-align: center;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
@@ -39,20 +38,37 @@ tbody {
 }
 
 td {
-    padding: 15px 0;
-    text-align: center;
+    padding: 17px 23px 13px 22px;
     font-size: 16px;
     color: #2a3644;
+
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #c0c1c2;;
 }
 
 tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
+tbody td:first-child {
+    text-align: center;
+}
+
+tbody td:nth-child(2) {
+    text-align: left;
+}
+
+tbody td:nth-child(n+3) {
+    text-align: right;
+}
+
 tbody tr:hover {
     background-color: #c0c1c2;
 }
-.table-noyt-th th{
+
+.table-noyt-th th {
     padding: 10px 0;
     text-align: center;
     font-size: 16px;
