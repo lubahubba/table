@@ -45,7 +45,8 @@ td {
 }
 
 tbody tr:not(:last-child) {
-    border-bottom: 1px solid #c0c1c2;;
+
+    border-bottom: 1px solid #c0c1c2;
 }
 
 tbody tr:nth-child(odd) {
