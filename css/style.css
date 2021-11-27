@@ -16,21 +16,22 @@ body {
     font-weight: bold;
 }
 
-table {
+.table {
     width: 960px;
+    margin: 40px 0;
     border-collapse: collapse;
 }
 
-thead th {
+.thead th {
     background-color: #2a3644;
-    padding: 10px 0;
+    padding: 10px 23px;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
 }
 
 
-tbody {
+.tbody {
     background-color: #e8e8e8;
 }
 
@@ -38,59 +39,89 @@ td {
     padding: 17px 23px 13px 22px;
     font-size: 16px;
     color: #2a3644;
-
+    
 }
 
-tbody tr:not(:last-child) {
 
-    border-bottom: 1px solid #c0c1c2;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-tbody td:first-child {
-    text-align: center;
-}
-
-tbody td:nth-child(2) {
+.thead tr:first-child th:nth-child(2),
+.thead-css:first-child b:nth-child(2){
     text-align: left;
 }
 
-tbody td:nth-child(n+3) {
+.thead,
+.thead-css{
+    text-align: center;
+}
+.thead tr:not(:last-child){
+    border-bottom: 1px solid #3f4852;
+}
+
+.thead th:not(:last-child),
+.table-css b:not(:last-child){
+    border-right: 1px solid #3f4852;
+}
+
+.tbody tr:not(:last-child),
+.tbody-css:not(:last-child) {
+    border-bottom: 1px solid #c0c1c2;
+}
+
+.tbody td:not(:last-child),
+.table-css i:not(:last-child){
+    border-right: 1px solid #c0c1c2;
+}
+
+.tbody tr:nth-child(odd),
+.tbody-css:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.tbody td:first-child,
+.tbody-css i:first-child {
+    text-align: center;
+}
+
+.tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.tbody td:nth-child(n+3),
+.tbody-css i:nth-child(n+3) {
     text-align: right;
 }
 
-tbody tr:hover {
+.tbody tr:hover,
+.tbody-css:hover{
     background-color: #c0c1c2;
 }
 
-.table {
+.table-css {
     display: table;
     width: 960px;
+    margin: 40px 0;
     border-collapse: collapse;
 }
 
-.table p {
+.table-css p {
     display: table-row;
     margin: 0;
     font-size: 16px;
     background-color: #e8e8e8;
 }
-.table b {
+
+
+.table-css b {
     display: table-cell;
     padding: 17px 23px 13px 22px;
     font-size: 16px;
-    color: #fff;
     background-color: #2a3644;
+    color: #fff;
 }
 
 
-.table i {
+.table-css i {
     display: table-cell;
     padding: 17px 23px 13px 22px;
-    
     font-size: 16px;
     color: #2a3644;
     font-style: normal;
