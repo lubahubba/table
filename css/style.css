@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: "Arial", serif;
 }
-header{
+
+header {
     margin: 20px;
 }
+
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
@@ -35,62 +37,73 @@ header{
     border-right: 1px solid #3f4852;
 }
 
-.top-menu>li>a{
+.top-menu>li>a,
+.top-menu2>li>a {
     display: block;
-    padding: 17px 30px;
+    padding: 13.30px 30px;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
-.top-menu2 {
+
+.nav {
     display: table;
-    justify-content: space-between;
-    padding: 0;
     width: 100%;
+}
+
+.top-menu2 {
+    display: table-row;
+    padding: 0;
     list-style: none;
     background-color: #2a3644;
 }
 
-.top-menu2>li{
+.top-menu2>li {
     display: table-cell;
     border-right: 1px solid #3f4852;
 }
 
-.top-menu2>li>a {
-    display: table-cell;
-    padding: 17px 30px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .in-menu,
-.in-menu2,
-.in-menu2-in-in{
+.in-menu2 {
     position: absolute;
     display: none;
     width: 210px;
     padding: 5px 0;
     list-style: none;
-    
 }
-.in-menu2-in{
+
+.in-menu2-in,
+.in-menu2-in-in {
     position: absolute;
     display: none;
+    padding: 0 5px;
+    top: 0;
     width: 210px;
-    padding: 5px 0;
     list-style: none;
-    
 }
+
+.in-menu2-in {
+    left: 100%;
+}
+
+.in-menu2-in-in {
+    right: 100%;
+}
+
 .in-menu li,
 .in-menu2 li,
 .in-menu2-in li,
 .in-menu2-in-in li {
+    position: relative;
     background-color: #d2d4d5;
-    padding: 15px 19px 10px 19px;
     text-align: left;
+}
+.in-menu li:not(:last-child),
+.in-menu2 li:not(:last-child),
+.in-menu2-in li:not(:last-child),
+.in-menu2-in-in li:not(:last-child) {
     border-bottom: 1px solid #b9bdc1;
 }
 .top-menu>li:hover>a,
@@ -99,12 +112,19 @@ header{
     background-color: #3f4852;
 }
 
+.in-menu>li:hover>a,
+.in-menu2>li:hover>a,
+.in-menu2-in>li:hover>a,
+.in-menu2-in-in>li:hover>a {
+    color: #ff8505;
+    background-color: #2a3644;
+}
+
 .top-menu>li:hover>.in-menu,
 .top-menu2>li:hover>.in-menu2,
 .in-menu2>li:hover>.in-menu2-in,
 .in-menu2-in>li:hover>.in-menu2-in-in {
     display: block;
-  
 }
 
 .in-menu a,
@@ -112,6 +132,7 @@ header{
 .in-menu2-in a,
 .in-menu2-in-in a {
     display: block;
+    padding: 10px 19px;
     font-size: 15px;
     color: #2a3644;
     font-weight: bold;
