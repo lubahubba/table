@@ -29,6 +29,7 @@ header {
     list-style: none;
     background-color: #2a3644;
 }
+
 .top-menu,
 .top-menu2,
 .top-menu3 {
@@ -55,6 +56,7 @@ header {
     text-decoration: none;
 }
 
+
 .nav {
     display: table;
     width: 100%;
@@ -75,8 +77,7 @@ header {
 
 .in-menu,
 .in-menu2,
-.selo-menu,
-.selo-menu2 {
+.selo-menu {
     position: absolute;
     display: none;
     width: 210px;
@@ -94,6 +95,22 @@ header {
     list-style: none;
 }
 
+.top-menu3-in {
+    position: absolute;
+    display: none;
+    padding: 5px 0;
+}
+
+.top-menu3-in-in {
+    background-color: #d2d4d5;
+}
+
+.top-menu3-in-in ul {
+    padding: 0;
+    width: 210px;
+    list-style: none;
+}
+
 .in-menu2-in {
     left: 100%;
 }
@@ -102,7 +119,7 @@ header {
     right: 100%;
 }
 
-.selo-menu2{
+.selo-menu2 {
     top: 100%;
 }
 
@@ -131,8 +148,12 @@ header {
 .in-menu2>li:hover>.in-menu2-in,
 .in-menu2-in>li:hover>.in-menu2-in-in,
 .top-menu3>li:hover>.selo-menu,
-.top-menu3>li:hover>.selo-menu2 {
+.top-menu3>li:hover>.top-menu3-in {
     display: block;
+}
+
+.top-menu3-in>li:hover>.top-menu3-in-in {
+    display: flex;
 }
 
 .style-in a {
