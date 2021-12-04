@@ -20,7 +20,8 @@ header {
     font-weight: bold;
 }
 
-.top-menu {
+.top-menu,
+.top-menu3 {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -28,17 +29,24 @@ header {
     list-style: none;
     background-color: #2a3644;
 }
+.top-menu,
+.top-menu2,
+.top-menu3 {
+    margin: 40px 0;
+}
 
-.top-menu>li {
+.top-menu>li,
+.top-menu3>li:not(:last-child) {
     border-left: 1px solid #3f4852;
 }
 
-.top-menu>li {
+
+.top-menu>li,
+.top-menu3>li {
     border-right: 1px solid #3f4852;
 }
 
-.top-menu>li>a,
-.top-menu2>li>a {
+.style>li>a {
     display: block;
     padding: 13.30px 30px;
     font-size: 16px;
@@ -66,7 +74,9 @@ header {
 
 
 .in-menu,
-.in-menu2 {
+.in-menu2,
+.selo-menu,
+.selo-menu2 {
     position: absolute;
     display: none;
     width: 210px;
@@ -92,30 +102,26 @@ header {
     right: 100%;
 }
 
-.in-menu li,
-.in-menu2 li,
-.in-menu2-in li,
-.in-menu2-in-in li {
+.selo-menu2{
+    top: 100%;
+}
+
+.style-in li {
     position: relative;
     background-color: #d2d4d5;
     text-align: left;
 }
-.in-menu li:not(:last-child),
-.in-menu2 li:not(:last-child),
-.in-menu2-in li:not(:last-child),
-.in-menu2-in-in li:not(:last-child) {
+
+.style-in li:not(:last-child) {
     border-bottom: 1px solid #b9bdc1;
 }
-.top-menu>li:hover>a,
-.top-menu2>li:hover>a {
+
+.style>li:hover>a {
     color: #fd8612;
     background-color: #3f4852;
 }
 
-.in-menu>li:hover>a,
-.in-menu2>li:hover>a,
-.in-menu2-in>li:hover>a,
-.in-menu2-in-in>li:hover>a {
+.style-in>li:hover>a {
     color: #ff8505;
     background-color: #2a3644;
 }
@@ -123,14 +129,13 @@ header {
 .top-menu>li:hover>.in-menu,
 .top-menu2>li:hover>.in-menu2,
 .in-menu2>li:hover>.in-menu2-in,
-.in-menu2-in>li:hover>.in-menu2-in-in {
+.in-menu2-in>li:hover>.in-menu2-in-in,
+.top-menu3>li:hover>.selo-menu,
+.top-menu3>li:hover>.selo-menu2 {
     display: block;
 }
 
-.in-menu a,
-.in-menu2 a,
-.in-menu2-in a,
-.in-menu2-in-in a {
+.style-in a {
     display: block;
     padding: 10px 19px;
     font-size: 15px;
@@ -138,8 +143,6 @@ header {
     font-weight: bold;
     text-decoration: none;
 }
-
-
 
 .table {
     width: 960px;
@@ -154,7 +157,6 @@ header {
     color: #fff;
     font-weight: bold;
 }
-
 
 .tbody {
     background-color: #e8e8e8;
@@ -256,7 +258,6 @@ tr:last-child>td:first-child,
     background-color: #e8e8e8;
 }
 
-
 .table-css b {
     display: table-cell;
     padding: 13px 23px;
@@ -264,7 +265,6 @@ tr:last-child>td:first-child,
     background-color: #2a3644;
     color: #fff;
 }
-
 
 .table-css i {
     display: table-cell;
