@@ -66,6 +66,7 @@ header {
     display: table-row;
     padding: 0;
     list-style: none;
+    text-align: center;
     background-color: #2a3644;
 }
 
