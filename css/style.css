@@ -20,6 +20,10 @@ header {
     font-weight: bold;
 }
 
+.style:first-child {
+    border-radius: 10px;
+}
+
 .top-menu,
 .top-menu3 {
     display: flex;
@@ -36,16 +40,15 @@ header {
     margin: 40px 0;
 }
 
-.top-menu>li,
-.top-menu3>li:not(:last-child) {
-    border-left: 1px solid #3f4852;
+.style>li:not(:first-child){
+border-left: 1px solid #3f4852;
 }
 
 
-.top-menu>li,
-.top-menu3>li {
+.style>li:not(:last-child) {
     border-right: 1px solid #3f4852;
 }
+
 
 .style>li>a {
     display: block;
@@ -99,10 +102,11 @@ header {
 .top-menu3-in {
     position: absolute;
     display: none;
-    padding: 5px 0;
+    padding-top: 5px;
 }
 
 .top-menu3-in-in {
+    display: flex;
     background-color: #d2d4d5;
 }
 
@@ -153,9 +157,6 @@ header {
     display: block;
 }
 
-.top-menu3-in>li:hover>.top-menu3-in-in {
-    display: flex;
-}
 
 .style-in a {
     display: block;
