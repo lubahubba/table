@@ -21,7 +21,7 @@ header {
 }
 
 .style:first-child {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .top-menu,
@@ -40,8 +40,8 @@ header {
     margin: 40px 0;
 }
 
-.style>li:not(:first-child){
-border-left: 1px solid #3f4852;
+.style>li:not(:first-child) {
+    border-left: 1px solid #3f4852;
 }
 
 
@@ -78,6 +78,12 @@ border-left: 1px solid #3f4852;
     border-right: 1px solid #3f4852;
 }
 
+.top-menu2>li:first-child{
+    border-radius: 3px 0 0 3px;
+}
+.top-menu2>li:last-child{
+    border-radius: 0 3px 3px 0;
+}
 
 .in-menu,
 .in-menu2,
@@ -143,9 +149,31 @@ border-left: 1px solid #3f4852;
     background-color: #3f4852;
 }
 
+.style:first-child>li:first-child:hover>a {
+    border-radius: 3px 0 0 3px;
+}
+
+.style:first-child>li:last-child:hover>a {
+    border-radius: 0 3px 3px 0;
+}
+
+.top-menu2:first-child>li:first-child:hover>a {
+    border-radius: 3px 0 0 3px;
+}
+
+.top-menu2:first-child>li:last-child:hover>a {
+    border-radius: 0 3px 3px 0;
+}
+
 .style-in>li:hover>a {
     color: #ff8505;
     background-color: #2a3644;
+}
+.style-in>li:first-child:hover>a {
+    border-radius: 3px 3px 0 0;
+}
+.style-in:last-child>li:last-child:hover>a {
+    border-radius: 0 0 3px 3px;
 }
 
 .top-menu>li:hover>.in-menu,
