@@ -85,6 +85,18 @@ header {
     border-radius: 0 3px 3px 0;
 }
 
+.top-menu3-in-in{ 
+    border-radius: 3px;
+}
+
+.style-in>li:first-child{
+    border-radius: 3px 0 0 0;
+}
+
+.style-in>li:last-child{
+    border-radius: 0 0 0 3px;
+}
+
 .in-menu,
 .in-menu2,
 .selo-menu {
@@ -175,6 +187,10 @@ header {
 .style-in:last-child>li:last-child:hover>a {
     border-radius: 0 0 3px 3px;
 }
+
+
+
+
 
 .top-menu>li:hover>.in-menu,
 .top-menu2>li:hover>.in-menu2,
