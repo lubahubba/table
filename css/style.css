@@ -179,6 +179,11 @@ a.home::before{
     background-position: -77px -3px;
 }
 
+a.home:hover:before{
+    width: 16px;
+    height: 16px;
+    background-position: -55px -3px;
+}
 
 .top-menu3-in-in {
     border-radius: 3px;
