@@ -50,7 +50,7 @@ nav{
 
 .style>li>a {
     display: block;
-    padding: 16px 30px;
+    padding: 14px 30px;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
@@ -162,6 +162,24 @@ a.in:hover {
     background-position: -34px -26px;
 }
 
+.top-menu3 a::before{
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    background: url(../photo/sprite.png) no-repeat;
+}
+.style .home{
+    padding-left: 58px;
+    position: relative;
+}
+a.home::before{
+    width: 16px;
+    height: 16px;
+    background-position: -77px -3px;
+}
+
+
 .top-menu3-in-in {
     border-radius: 3px;
 }
@@ -207,6 +225,8 @@ list-style: none;
     list-style: none;
 }
 
+
+
 .in-menu2-in {
     left: 100%;
 }
@@ -248,6 +268,10 @@ list-style: none;
 
 .top-menu2:first-child>li:last-child:hover>a {
     border-radius: 0 3px 3px 0;
+}
+
+.style-in{
+    z-index: 1;
 }
 
 .style-in>li:hover>a {
