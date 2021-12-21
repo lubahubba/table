@@ -118,7 +118,7 @@ nav{
 .social {
     display: flex;
     list-style: none;
-    margin: 15px 30px;
+    margin: 13px 30px;
     background-color: #2a3644;
 }
 
@@ -290,6 +290,13 @@ list-style: none;
 
 .style-in:last-child>li:last-child:hover>a {
     border-radius: 0 0 3px 3px;
+}
+
+.selo-menu-in>li:first-child:hover>a{
+    border-radius: 3px 0 0 0;
+}
+.selo-menu-in-in>li:first-child:hover>a{
+    border-radius: 0 3px 0 0;
 }
 
 .selo-menu-in-in:last-child>li:last-child:hover>a{
