@@ -62,8 +62,12 @@ nav{
     display: table;
     width: 100%;
 }
-
-
+li{
+    position: relative;
+}
+.top-menu>li:last-child>.in-menu {
+right: 0;
+}
 .top-menu2 {
     display: table-row;
     padding: 0;
